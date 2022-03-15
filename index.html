@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="icon" type="image/ico" href="./arquivos/icone.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    
     <title>Felipe Gomes</title>
 </head>
 
 <body>
 
   <header class="mb-5"> <!-- LOGO E TÍTULO -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 15px; ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="font-size: 15px; ">
       <a class="navbar-brand" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-code-fill" viewBox="0 0 16 16">
           <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/>
@@ -25,171 +27,39 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">     
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arquivos úteis</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
               <a class="dropdown-item" href="./arquivos/apresentaçao.pdf" target="_blank">Apresentação da Brasil</a>
-              <a class="dropdown-item" href="./arquivos/listadeprodutos.pdf" target="_blank">Mercadorias</a>
-              <a class="dropdown-item" href="./arquivos/FICHA CADASTRO BRASIL DOS PARAFUSOS.pdf" target="_blank">Ficha de Cadastro da Brasil</a>
-              <a class="dropdown-item" href="./arquivos/FICHA CADAS.CLIENTES BRASIL 09.07.20..xlsx" target="_blank">Ficha de Cadastro de clientes</a>
-              <a class="dropdown-item" href="./arquivos/Controle de Itens Inventariados.XLSX" target="_blank">Planilha de controle de itens inventariados (atualizada em 08/11)</a>
-              <a class="dropdown-item" href="./arquivos/Onboarding Brasil dos Parafusos.pptx.pdf" target="_blank">Onboarding Brasil dos Parafusos</a>
-              <a class="dropdown-item" href="./arquivos/PPT - Brasil dos Parafusos.zip" target="_blank">PPT Padrão Brasil dos Parafusos</a>
+              
             </div>
           </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manuais e instruções</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estudos e ferramentas</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
               
               <a class="dropdown-item" href="./arquivos/manuais/Manual Siger.pdf" target="_blank">Manual Oficial SIGER</a>
-              <a class="dropdown-item" href="manualrech\index.html" target="_blank">Manual Básico do SIGER (RECOMENDO ESTE)</a>
-              <a class="dropdown-item" href="./arquivos/manuais/basico.pdf" target="_blank">Manual Básico (EM DESENVOLVIMENTO)</a>
-              <a class="dropdown-item" href="./arquivos/manuais/cadastrodeproduto.pdf" target="_blank">Como cadastrar produtos</a>
-              <a class="dropdown-item" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx" target="_blank" >Consultar NFE no Sefaz</a>
+              
               <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#manualbasico">
                 Acessar manual básico do SIGER pelo próprio sistema
               </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#cancelarseparacao">
-                Cancelar separação de pedido
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#nfcupom">
-                Emitir NF de cupom fiscal
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#pedidointerno">
-                Emitir pedido interno
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#pedidoparcial">
-                Tirar saldo de pedido parcialmente faturado
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#relatoriovendaspedidos">
-                Relatórios de venda por clientes ou produtos (listagem de pedidos faturados)
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#relatoriovendasprodutos">
-                Relatório de vendas por clientes ou produtos (listagem de saida de produtos)
-              </button>
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#nffaturada">
-                Consultar / reenviar NF já faturada
-              </button>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> E-mails</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="mailto:fernando@brasildosparafusos.com.br" target="_blank">Alex</a>
-              <a class="dropdown-item" href="mailto:ana@brasildosparafusos.com.br" target="_blank">Ana</a>
-              <a class="dropdown-item" href="mailto:anajulia@brasildosparafusos.com.br" target="_blank">Ana Julia</a>
-              <a class="dropdown-item" href="mailto:daniel@brasildosparafusos.com.br" target="_blank">Daniel</a>
-              <a class="dropdown-item" href="mailto:diego@brasildosparafusos.com.br" target="_blank">Diego</a>
-              <a class="dropdown-item" href="mailto:diogo@brasildosparafusos.com.br" target="_blank">Diogo</a>
-              <a class="dropdown-item" href="mailto:felipe@brasildosparafusos.com.br" target="_blank">Felipe</a>
-              <a class="dropdown-item" href="mailto:fernando@brasildosparafusos.com.br" target="_blank">Fernando</a>
-              <a class="dropdown-item" href="mailto:jeferson@brasildosparafusos.com.br" target="_blank">Jeferson</a>
-              <a class="dropdown-item" href="mailto:financeiro@brasildosparafusos.com.br" target="_blank">Loiva</a>
-              <a class="dropdown-item" href="mailto:franciele@brasildosparafusos.com.br" target="_blank">Franciele</a>
-              <a class="dropdown-item" href="mailto:gustavo@brasildosparafusos.com.br" target="_blank">Gustavo</a>
-              <a class="dropdown-item" href="mailto:laura@brasildosparafusos.com.br" target="_blank">Laura</a>
-              <a class="dropdown-item" href="mailto:leandro@brasildosparafusos.com.br" target="_blank">Leandro</a>
-              <a class="dropdown-item" href="mailto:luciano@brasildosparafusos.com.br" target="_blank">Luciano</a>
-              <a class="dropdown-item" href="mailto:luizromero@brasildosparafusos.com.br" target="_blank">Luiz</a>
-              <a class="dropdown-item" href="mailto:marta@brasildosparafusos.com.br" target="_blank">Marta</a>
-              <a class="dropdown-item" href="mailto:matheus@brasildosparafusos.com.br" target="_blank">Matheus</a>
-              <a class="dropdown-item" href="mailto:paula@brasildosparafusos.com.br" target="_blank">Paula</a>
-              <a class="dropdown-item" href="mailto:rafael@brasildosparafusos.com.br" target="_blank">Rafael</a>
-              <a class="dropdown-item" href="mailto:rudi@brasildosparafusos.com.br" target="_blank">Rudi</a>
-              <a class="dropdown-item" href="mailto:salmo@brasildosparafusos.com.br" target="_blank">Salmo</a>
-              <a class="dropdown-item" href="mailto:tiago@brasildosparafusos.com.br" target="_blank">Tiago</a>
-              <a class="dropdown-item" href="mailto:valeria@brasildosparafusos.com.br" target="_blank">Valeria</a>
-              <a class="dropdown-item" href="mailto:william@brasildosparafusos.com.br" target="_blank">William</a>
-              <a class="dropdown-item" href="mailto:yasmim@brasildosparafusos.com.br" target="_blank">Yasmim</a>
-              <a class="dropdown-item" href="https://webmail-seguro.com.br/brasildosparafusos.com.br/" target="_blank">ACESSO PELO NAVEGADOR (senha : Brasil@01)</a>  
-
-            </div>
-          </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RECH</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="https://www.rech.com.br/download/suporte-remoto" target="_blank">Download Team Viewer</a>
-              <a class="dropdown-item" href="http://www.skype.com/pt-br/download-skype/skype-for-computer/" target="_blank">Download Skype</a>
-              <a class="dropdown-item" href="contatosrech.html" target="_blank">Contatos RECH</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manutenção</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="https://drive.google.com/uc?export=download&id=1veNydX18_E1iqRTaggNAMSji7lwmQOTj" download="impressoras.bat" target="_blank">Instalação de impressoras</a>
-              <a class="dropdown-item" href="https://drive.google.com/uc?export=download&id=1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q " target="_blank">Instalação do SIGER</a>
-              <a class="dropdown-item" href="./arquivos/Ninite Chrome Foxit Reader JDK AdoptOpenJDK 8 Installer.exe" target="_blank">Programas de uso comum</a>
-              <a class="dropdown-item" href="https://drive.google.com/file/d/1yvd5dCRnUxxKV9IGwp3duafZU2D3NzZb/view?usp=sharing" download ="execute.reg"  target="_blank" role="button" >Desativar Windows Update (baixe e execute este arquivo)</a>
-              <a class="dropdown-item" href="https://drive.google.com/uc?export=download&id=1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q " target="_blank" role="button" >Instalar o SIGER (baixe e execute o arquivo)</a>           
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SLA</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#explicacaosla">
-                O que é um SLA?
-              </button>
-
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#SLAFinanceiro">
-                SLA Financeiro
-              </button>
               
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#SLATI">
-                SLA TI
-              </button>     
             </div>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pessoas</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#financeiro">
-                Financeiro
-              </button>
-              
-              <a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1LJYytvJ2W_H0-KwWe_wFeXtGcp-y99OxFMGtRY2ahUc/edit?usp=sharing " target="_blank">Descrição de cargos Brasil dos Parafusos 2021</a>
-              
-              <a class="dropdown-item" href="arquivos/Política de Cargos e Salários- Brasil dos Parafusos jan2022.pdf" target="_blank">Política de cargos e salários</a>
-              <a class="dropdown-item" href="https://drive.google.com/file/d/1CC9gkseZERxC9YRNQqde-Xsqp2g6EhH9/view" target="_blank">Programa de PLR - Brasil dos Parafusos</a>
-              <a class="dropdown-item" href="arquivos/Ponto Funcionario.xls" >Relógio Ponto</a>        
-            </div>
-          </li>
+          
 
-          <li class="nav-item dropdown dropleft"> <!--Dropleft para abrir menu dropdown para esquerda-->
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outros</a>
+          <li class="nav-item dropdown "> <!--Dropleft para abrir menu dropdown para esquerda-->
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projetos</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="mailto:felipe@brasildosparafusos.com.br?subject=Sugestão para o portal" target="_blank" role="button" >Enviar sugestão de melhoria para o portal</a> 
-              <!--<a class="dropdown-item" href="https://app.pipefy.com/public/form/G67Nq9sL" target="_blank" role="button" ">Solicitação de compra de produto</a> -->
-              <a class="dropdown-item" href="http://pw.siger.com.br/bdp/" target="_blank" role="button" >Controle do SIGER MOBILE (Usuário: admin | Senha: administrador)</a> 
-              <a class="dropdown-item" href="https://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx?versao=2.00" target="_blank" role="button" >Sefaz fora do ar?</a> 
-              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#wifi">
-                Senhas da WIFI
-              </button>
-              <a class="dropdown-item" href="https://www.alphatecrs.com.br" target="_blank" role="button" >Alphatec (telefones)</a> 
-              <a class="dropdown-item" href="http://api.whatsapp.com/send?phone=555133623000" target="_blank" role="button" >Alphatec (whats)</a>
-              <a class="dropdown-item" href="mailto:refripampa@hotmail.com" target="_blank" role="button" >Refrigeração Pampa (Ar condicionado) E-mail</a> 
-              <a class="dropdown-item" href="#" onclick="pampa()" role="button" >Refrigeração Pampa (Ar condicionado) Dados de contato</a>              
+              <a class="dropdown-item" href="https://interno.brasildosparafusos.com.br" target="_blank" role="button" >Portal interno da Brasil dos Parafusos</a> 
              
             </div>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ramais</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a type="button" class="dropdown-item" data-toggle="modal" data-target="#ramalcomercial" href="#">
-                Ramal Comercial
-              </a>
-              <a type="button" class="dropdown-item" data-toggle="modal" data-target="#ramalestoque" href="#">
-                Ramal Estoque
-              </a>
-              <a type="button" class="dropdown-item" data-toggle="modal" data-target="#ramaladministrativoti" href="#">
-                Ramal Administrativo/TI
-              </a>
-            </div>
+          <li class="nav-item ">
+            <a class="nav-link " href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contato</a>
+            
           </li>
         </ul>
       </div>
@@ -200,38 +70,62 @@
   
 
 
-<div class="container-fluid text-center maincolor">
+<section class="container-fluid text-center maincolor mb-5" id="initial">
   
-  <h1 style="font-size: 64px;" >Bem-vindo</h1> 
+  <h1 style="font-size: 68px;">Bem-vindo</h1>
+  <b style="text-decoration: underline;">Olá, me chamo Felipe e este é meu portifólio online.</b> <br>
+  <h3>Dev. Júnior | Auxiliar de TI</h3> 
   
   
-</div>
+</section>
 
 
 <div class="container-fluid text-center" id="videos">
   <div class="row">
-    <div class="col-md-4"  > <!-- COLUNA ESQUERDA -->
+    <div class="col-md-3"  > <!-- COLUNA ESQUERDA -->
       
      
     </div>
 
-    <div class="col-4"  > <!-- COLUNA MEIO -->
+    <div class="col-6"  > <!-- COLUNA MEIO -->
 
 
       <div class="maincolor">
-        <b>Olá, me chamo Felipe e este é meu portifólio online.</b> 
-      <h3>Apresentação</h3>
-      <b>Tenho 22 anos, moro em Cachoeirinha - RS. Escolhi a área da programação por achar incrível a possibilidade de registrar ideias e pensamentos em algoritmos. <br>
-      Também entendo que nosso futuro será 100% dependente de tecnologia, e eu gosto da ideia de estar do lado deste desenvolvimento. 
-      </b>
-
+       
+        <h3>Apresentação</h3>
+        <b>Tenho 22 anos, moro em Cachoeirinha - RS. Escolhi a área da programação por achar incrível a possibilidade de registrar ideias e pensamentos em algoritmos. <br>
+        Também entendo que nosso futuro será 100% dependente de tecnologia, e eu gosto da ideia de estar do lado deste desenvolvimento. 
+        </b>
+        <h3>Formação</h3>
+        <b>Ensino Médio Completo concluído em 2016 – Escola Estadual de Ensino Médio Presidente Kennedy
+        </b>
+        <h4>Cursos Profissionalizantes:</h4>
+        <ul>
+          <li>Manutenção de Redes e computadores</li>
+          <li>Web Design e Design Gráfico</li>
+        </ul>
+        <h4>Cursos a distância:</h4>
+        <ul>
+          <li>Introdução ao Python</li>
+          <li>Introdução a linguagem HTML</li>
+          <li>Introdução ao bando de dados MySQL</li>
+          <li>Curso Web Design Completo: HTML5, CSS3 e JS</li>
+          <li>[SerTop] Algoritmos e Lógica - I</li>
+        </ul>
+        <h4>Graduação Incompleta:</h4>
+        <b>Engenharia de Computação - Cursado entre 2017/1 e 2020/2 no Grupo UNIFTEC</b>
+        <h4>Cursando:</h4>
+        <b>Análise e Desenvolvimento de Sistemas - 2021/1 , previsão de formação em 2022/2 
+        </b>
       </div>
       
      
     </div>
 
-    <div class="col-4" > <!-- COLUNA DIREITA-->
-      
+    <div class="col-3" > <!-- COLUNA DIREITA-->
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
     </div>
 
   </div>
@@ -239,8 +133,8 @@
 </div>
 
 
-<footer class="page-footer text-center fixed-bottom" style="z-index: 1; ">
-  <h5>Versão 1.0 | ©2022
+<footer class="page-footer text-center mt-5" style="z-index: 1; ">
+  <h5 style="color: azure;">Versão 1.0 | ©2022
     <a href="https://www.instagram.com/l0tus_program/" target="_blank">
       <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
@@ -257,21 +151,23 @@
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
     </svg>
   </a>
-  <!-- Inicia codigo Contador -->
+  <!-- Inicia codigo Contador 
   <div align="center"><a title='Contador de Visitas do MegaContador' href='https://megacontador.com.br/' ><img src='https://megacontador.com.br/img-7PIjk1c8IBhetmtM-77.gif' border='0' alt='Contador de visitas'></a></div>
-<!-- Fim do codigo Contador -->
-
+Fim do codigo Contador -->
 
   </h5>
-  
+
+  <a id="back-to-top" href="#initial" class="scrollSuave"></a>
+ 
+    
 </footer>
 
-  
-  <script src="scripts/func.js"></script> <!-- AVISOS -->
+<script src="scripts/func.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

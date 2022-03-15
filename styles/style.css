@@ -1,0 +1,26 @@
+body{
+  /*  background-image: url(../src/hackerbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background: rgb(114,128,114);
+    background: linear-gradient(90deg, rgba(114,128,114,1) 1%, rgba(0,0,0,0.9990371148459384) 100%);
+
+}
+
+.maincolor{
+    color: azure;
+    
+    
+    justify-content: center;
+}
+
+.icons{
+    color:azure;
+}
+
+.icons:hover{
+    color: black;
+    width: 50px;
+    height: 50px;
+}

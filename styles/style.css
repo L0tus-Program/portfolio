@@ -1,13 +1,6 @@
 body{
-  /*  background-image: url(../src/hackerbackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-*/
+
     height: 100%;
-    /*
-    background: rgb(114,128,114);
-    background: linear-gradient(90deg, rgba(114,128,114,1) 1%, rgba(0,0,0,0.9990371148459384) 100%);
-*/
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 69%, rgba(2,0,36,1) 98%);
 }
@@ -19,14 +12,15 @@ body{
 
 .icons{
     color:azure;
+    transition: width 2s, height 2s;
     
 }
 
 .icons:hover{
-    color: black;
-    width: 50px;
-    height: 50px;
-    padding-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px !important;
+    
 }
 
 
@@ -45,25 +39,32 @@ body{
 }
 
 
-    #back-to-top {
-        background-color: #38322e;
-        border-radius: 65px;
-        bottom: 14px;
-        box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
-        color: #d9a000;
-        cursor: pointer;
-        height: 40px;
-        position: fixed;
-        right: 22px;
-        width: 40px;
-        z-index: 3;
-    }
+#back-to-top {
+    bottom: 14px;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+}
 
 #back-to-top::after {
-    content: '▲';
     display: flex;
     justify-content: center;
     padding-left: 1px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
   
+.links{
+    text-decoration-line: underline;
+    color: azure;
+}
+
+.links:link{
+    color: azure;
+}
+.links:hover{
+    color: blue;
+    cursor: pointer;
+}

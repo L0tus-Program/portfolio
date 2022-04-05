@@ -7,7 +7,6 @@ body{
 
 .maincolor{
     color: azure;
-    justify-content: center;
 }
 
 .maincolor h4{
@@ -30,7 +29,6 @@ body{
     margin-bottom: 10px !important;
     
 }
-
 
 #dropdownId{
     color: azure;
@@ -76,3 +74,4 @@ body{
     color: rgb(211, 211, 235);
     cursor: pointer;
 }
+

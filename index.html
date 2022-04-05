@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="icon" type="image/ico" href="./arquivos/icone.ico"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="icon" type="image/ico" href="./src/hackerfavicon.png"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>  
+    <!--Ícones adquiridos do site www.flaticon.com/br/icones-gratis/hacker-->
     
     <title>Felipe Gomes</title>
 </head>
@@ -16,9 +17,7 @@
   <header class="mb-5"> <!-- LOGO E TÍTULO -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="font-size: 15px;" id="nav">
       <a class="navbar-brand" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-code-fill" viewBox="0 0 16 16">
-          <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/>
-        </svg>
+        <img src="./src/hackerfavicon.png" width="30" height="30" alt="logo">
       </a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estudos e ferramentas</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
       
-              <a class="dropdown-item" href="https://drive.google.com/drive/folders/1hgFMG0iAoouwQgobFAwbTOBMo_tjAXZP?usp=sharing" target="_blank">E-books para estudar</a>
+              <a class="dropdown-item" href="https://drive.google.com/drive/folders/1-hxD9oJM0uZ2lNT_bfK8WOZcvkcK_73O?usp=sharing" target="_blank">E-books para estudar</a>
           
             </div>
           </li>
@@ -71,7 +70,7 @@
 </section>
 
 
-<div class="container-fluid text-center" id="videos">
+<div class="container-fluid text-center" id="main">
   <div class="row">
     <div class="col-3"  > <!-- COLUNA ESQUERDA -->
       
@@ -93,21 +92,26 @@
         <h4>Cursos Profissionalizantes:</h4>
         <ul>
           <li>Manutenção de Redes e computadores</li>
-          <li>Web Design e Design Gráfico</li>
+          <li><a href="./src/certificados/Web Design e Design Grafico IM.pdf" target="_blank" class="links">Web Design e Design Gráfico</a></li>
         </ul>
         <h4>Cursos a distância:</h4>
         <ul>
-          <li>Introdução ao Python</li>
-          <li>Introdução a linguagem HTML</li>
-          <li>Introdução ao bando de dados MySQL</li>
-          <li>Curso Web Design Completo: HTML5, CSS3 e JS</li>
-          <li>[SerTop] Algoritmos e Lógica - I</li>
+          <li><a href="./src/certificados/certificado python.pdf" target="_blank" class="links">Introdução ao Python</a></li>
+          <li><a href="./src/certificados/HTML.pdf" target="_blank" class="links">Introdução a linguagem HTML</a></li>
+          <li><a href="./src/certificados/Introdução ao banco de dados MySQL.pdf" target="_blank" class="links">Introdução ao bando de dados MySQL</a></li>
+          <li><a href="#" target="_blank" class="links">Curso Web Design Completo: HTML5, CSS3 e JS</a></li>
+          <li><a href="#" target="_blank" class="links">[SerTop] Algoritmos e Lógica - I</a></li>
         </ul>
         <h4>Graduação Incompleta:</h4>
         <b><a class="links" href="https://www.ftec.com.br/porto-alegre/presencial/graduacao/engenharia-de-computacao/" target="_blank" rel="noopener noreferrer">Engenharia de Computação :</a> - Cursado entre 2017/1 e 2020/2 no Grupo UNIFTEC</b>
         <h4>Cursando:</h4>
         <b><a class="links" href="https://www.cesuca.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas/" target="_blank" rel="noopener noreferrer">Análise e Desenvolvimento de Sistemas</a> - 2021/1 , previsão de formação em 2022/2 
         </b>
+        <h4>Eventos e conferências:</h4>
+        <ul>
+          <li><a href="./src/certificados/Cópia de Felipe Leszczynski Gomes.pdf" target="_blank" class="links">Stefanini Experience</a></li>
+          
+        </ul>
         <h4>Experiência profissional:</h4>
         <ul>
           <li><a class="links" href="https://previdenciacachoeirinha.atende.net/cidadao" target="_blank" rel="noopener noreferrer">IPREC :</a> Período de um ano e meio de estágio no setor administrativo e recepção.
@@ -127,57 +131,57 @@
           <h4>Linguagens / tecnologias de desenvolvimento</h4>
           <ul style="list-style: none;">
             <li>
-              <u>HTML :</u>
+              <u><a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>CSS :</u>
+              <u><a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>JavaScript :</u>
+              <u><a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>NodeJS :</u>
+              <u><a class="links" href="https://nodejs.org/pt-br/" target="_blank">Node.js :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>Bootstrap :</u>
+              <u><a class="links" href="https://getbootstrap.com.br" target="_blank">Bootstrap :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>Python :</u>
+              <u><a class="links" href="https://www.python.org" target="_blank">Python :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>MySQL :</u>
+              <u><a class="links" href="https://dev.mysql.com" target="_blank" >MySQL :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
+                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>PostgreSQL :</u>
+              <u><a class="links" href="https://www.postgresql.org" target="_blank">PostgreSQL :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
+                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
             <li>
-              <u>C :</u>
+              <u><a class="links" href="https://www.docs.microsoft.com/pt-br/cpp/c-language" target="_blank" >C :</a></u>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </li>
           </ul>
@@ -240,7 +244,7 @@
           </svg>
         </a> <br>
         <span>Whatsapp : 51 992090470</span>
-        <a href="https://api.whatsapp.com/send?phone=5551992090470">
+        <a href="https://api.whatsapp.com/send?phone=5551992090470" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(133, 206, 23);" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
           <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
         </svg> </a> <br>

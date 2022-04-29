@@ -5,6 +5,8 @@ body{
     background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 69%, rgba(2,0,36,1) 98%);
 }
 
+/* MAINCOLOR = Cores principais do site */
+
 .maincolor{
     color: azure;
 }
@@ -16,6 +18,20 @@ body{
 .maincolor h3{
     color: rgb(170, 255, 255);
 }
+
+/* FIM MAINCOLOR */
+
+/* INÍCIO MARGIN */
+
+.margin{
+    margin-top: 10vh;
+
+}
+
+/* FIM MARGIN */
+
+
+/* ÍNICIO ÍCONES */
 
 
 .icons{
@@ -29,6 +45,9 @@ body{
     margin-bottom: 10px !important;
     
 }
+
+
+/* FIM ÍCONES */
 
 #dropdownId{
     color: azure;
@@ -44,6 +63,8 @@ body{
     align-items: center;
 }
 
+
+/* ÍNICIO BOTÃO VOLTAR AO TOPO */
 
 #back-to-top {
     bottom: 14px;
@@ -61,9 +82,13 @@ body{
     padding-left: 1px;
     padding-top: 8px;
 }
-  
+
+/* FIM BOTÃO VOLTAR AO TOPO */
+
+
+
 .links{
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: azure;
 }
 

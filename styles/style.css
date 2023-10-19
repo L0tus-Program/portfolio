@@ -1,10 +1,23 @@
 body{
 
     height: 100%;
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 69%, rgba(2,0,36,1) 98%);
+    width: 100%;
+    background: rgb(0, 0, 0);
+    /*background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(2,0,36,1) 69%, rgba(2,0,36,1) 98%);
+   */
+    background-image: url("https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 100% 100%; 
+    
 }
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
 /* MAINCOLOR = Cores principais do site */
 
 .maincolor{
@@ -17,7 +30,7 @@ body{
 
 .maincolor h3{
     color: rgb(170, 255, 255);
-}
+} 
 
 /* FIM MAINCOLOR */
 
@@ -36,7 +49,7 @@ body{
 
 .icons{
     color:azure;
-    transition: all 0.3s linear;
+    transition: all 0.3s linear !important;
     
 }
 
@@ -99,4 +112,11 @@ body{
     color: rgb(211, 211, 235);
     cursor: pointer;
 }
+
+h1:hover {
+    transform: translate3d(0, -10px, 22px);
+    color: #ff0266;
+  }
+  
+
 

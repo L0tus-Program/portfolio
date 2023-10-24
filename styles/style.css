@@ -2,7 +2,7 @@ body{
 
     height: 100%;
     width: 100%;
-    background: rgb(0, 0, 0);
+    /*background: rgb(0, 0, 0); */
     /*background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(2,0,36,1) 69%, rgba(2,0,36,1) 98%);
    */
     background-image: url("https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
@@ -18,6 +18,25 @@ body{
     height: 100%;
     
 }
+
+.begin h1{
+    font-size: 75px;
+    text-decoration: underline;
+    font-weight: bold;
+    animation: changeColor 5s infinite;
+}
+@keyframes changeColor {
+    0% { color: #C0C0C0; font-size: 77px; } /* Prata */
+    25% { color: #747171; font-size: 78px; } /* Cinza claro */
+    50% { color: #ff2222e8;font-size: 80px; } /* Cinza claro */
+    75% { color: #ffaa5b;font-size: 77px; } /* Cinza claro */
+    100% { color: #e5e5e59d; font-size: 76px;} /* Cinza claro */
+}
+
+.begin h2{
+    font-size: 60px;
+}
+
 /* MAINCOLOR = Cores principais do site */
 
 .maincolor{
@@ -45,7 +64,6 @@ body{
 
 
 /* ÍNICIO ÍCONES */
-
 
 .icons{
     color:azure;
@@ -113,10 +131,9 @@ body{
     cursor: pointer;
 }
 
-h1:hover {
-    transform: translate3d(0, -10px, 22px);
-    color: #ff0266;
-  }
-  
+
+
+
+
 
 

@@ -11,6 +11,34 @@ body{
     background-position: 100% 100%; 
     
 }
+.card {
+    margin: 20px;
+    position: relative;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background: linear-gradient(100deg, #000000, #00000018,#f78b70f5,  #ff0000);
+    opacity: 0;
+    z-index: -1;
+    transition: all .8s;
+  }
+  
+  .card:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
+    border-radius: 20pt;
+  }
+  
+  .card-header {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: rgb(0, 0, 0);
+  }
 
 #particles-js {
     position: absolute;
@@ -26,11 +54,11 @@ body{
     animation: changeColor 5s infinite;
 }
 @keyframes changeColor {
-    0% { color: #C0C0C0; font-size: 77px; } /* Prata */
-    25% { color: #747171; font-size: 78px; } /* Cinza claro */
-    50% { color: #ff2222e8;font-size: 80px; } /* Cinza claro */
-    75% { color: #ffaa5b;font-size: 77px; } /* Cinza claro */
-    100% { color: #e5e5e59d; font-size: 76px;} /* Cinza claro */
+    0% { color: #C0C0C0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; } /* Prata */
+    25% { color: #747171; font-family: Georgia, 'Times New Roman', Times, serif; } /* Cinza claro */
+    50% { color: #ff2222e8;font-family: Verdana, Geneva, Tahoma, sans-serif; } /* Cinza claro */
+    75% { color: #ffaa5b;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;} /* Cinza claro */
+    100% { color: #e5e5e59d; font-family:'Times New Roman', Times, serif} /* Cinza claro */
 }
 
 .begin h2{
@@ -130,8 +158,6 @@ body{
     color: rgb(211, 211, 235);
     cursor: pointer;
 }
-
-
 
 
 
